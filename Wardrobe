@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wardrobe - Your Smart Style Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-hanger"></i>
+                <span>Digital Wardrobe</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#planner">Planner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Your Smart Digital Wardrobe</h1>
+            <p class="hero-subtitle">Organize, style, and plan your outfits effortlessly</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <div class="floating-cards">
+                <div class="card shirt"></div>
+                <div class="card pants"></div>
+                <div class="card shoes"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Upload Clothes</h3>
+                    <p>Scan or upload photos of your wardrobe items with automatic categorization</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Create Outfits</h3>
+                    <p>Drag & drop to mix and match perfect combinations from your collection</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>AI Suggestions</h3>
+                    <p>Get personalized outfit recommendations based on weather, occasion & trends</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Style History</h3>
+                    <p>Track what you've worn and discover your personal style patterns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wardrobe Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Your Wardrobe</h2>
+            <div class="gallery-grid">
+                <div class="clothing-item" data-category="tops">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop" alt="White Blouse">
+                    <div class="item-overlay">
+                        <h4>White Blouse</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="clothing-item" data-category="bottoms">
+                    <img src="https://images.unsplash.com/photo-1529139578434-4a3ed3a4ed67?w=300&h=400&fit=crop" alt="Blue Jeans">
+                    <div class="item-overlay">
+                        <h4>Blue Jeans</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="clothing-item" data-category="tops">
+                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=300&h=400&fit=crop" alt="Black Turtleneck">
+                    <div class="item-overlay">
+                        <h4>Black Turtleneck</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="clothing-item" data-category="dresses">
+                    <img src="https://images.unsplash.com/photo-1578496621444-67f3e3f9ab20?w=300&h=400&fit=crop" alt="Red Dress">
+                    <div class="item-overlay">
+                        <h4>Red Dress</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="clothing-item" data-category="shoes">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=400&fit=crop" alt="White Sneakers">
+                    <div class="item-overlay">
+                        <h4>White Sneakers</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="clothing-item" data-category="bottoms">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&h=400&fit=crop" alt="Black Skirt">
+                    <div class="item-overlay">
+                        <h4>Black Skirt</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outfit Planner -->
+    <section id="planner" class="planner">
+        <div class="container">
+            <h2 class="section-title">Outfit Planner</h2>
+            <div class="planner-container">
+                <div class="outfit-slots">
+                    <div class="slot top" data-slot="top">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Top</span>
+                    </div>
+                    <div class="slot bottom" data-slot="bottom">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Bottom</span>
+                    </div>
+                    <div class="slot shoes" data-slot="shoes">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Shoes</span>
+                    </div>
+                </div>
+                <div class="ai-suggestions">
+                    <h4>AI Suggestions</h4>
+                    <div class="suggestion-item">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=100&h=133&fit=crop" alt="Outfit 1">
+                        <span>Office Chic</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <img src="https://images.unsplash.com/photo-1529139578434-4a3ed3a4ed67?w=100&h=133&fit=crop" alt="Outfit 2">
+                        <span>Casual Day</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"This app completely transformed how I get dressed! The AI suggestions are spot on and I never repeat outfits anymore."</p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" alt="Sarah">
+                        <div>
+                            <h4>Sarah M.</h4>
+                            <span>Fashion Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Perfect for busy mornings. I can plan my week's outfits in 5 minutes and always look put together."</p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Mike">
+                        <div>
+                            <h4>Mike R.</h4>
+                            <span>Marketing Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Love the wardrobe organization! Finally I can see everything I own and make better purchasing decisions."</p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Emma">
+                        <div>
+                            <h4>Emma L.</h4>
+                            <span>Teacher</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to organize your style?</h3>
+                    <p>Start your free trial today and discover a smarter way to dress.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-hanger"></i>
+                    <span>Digital Wardrobe</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Support</a>
+                </div>
+                <p>&copy; 2024 Digital Wardrobe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
